@@ -1,6 +1,9 @@
 # Explorations Project
 This is a Project from Explorations.
 
+## License
+Distributed Under GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
+
 ## SourceCode
 [Processing P5 Code base:](https://p5js.org/)
 [HTML 5](https://www.w3schools.com/html/)
