@@ -1,7 +1,7 @@
 # Explorations Project
 This is a Project from Explorations.
 
-##Code we learned during this project
+## Code we learned during this project
 
 HTML5 concepts: 
 - Canvas tag which destoyed Flash
