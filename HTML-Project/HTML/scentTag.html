@@ -7,43 +7,46 @@
 <a href="index.html">Back</a>	
 <textarea id="xmlArea" rows="50" cols="100" style="border:none;">
 
-<!-- @autor: Smell Tag as imagined by Frank Ferrao based on current HTML standards -->
+<!-- @autor: Scent Tag as imagined by Frank Ferrao based on current HTML standards -->
 <?xml version="1.0" encoding="UTF-8"?>
 
 <about>
-	<info>Digital HTML 6 Smell Tag</info>
+	<info>Digital HTML 6 Scent Tag</info>
 	<version>1.0</version>
 	<encoding>UTF-8</encoding>
 </about>
 <smell>
-	<info>These are the attributes of the smell Tag</info>
-	<id>ID number to tell the browser of the smell/smells to identify from a central database</id>
+	<info>These are the attributes of the scent Tag</info>
+	<id>ID number to tell the browser of the scent/scents to identify from a central database</id>
 	<detect>browser Auto Detects, Permission, parameters: AUTO, ON, OFF, ASK, auto disable</detect>
-	<strength>Sets the strength of the sensor 0to10</strength>
+	<strength>Sets the strength of the scent to be dispensed [n.....n] depending on device</strength>
 	<source>
-		<info>The source of the Database you would like to use</info>
+		<info>The source of the Database you would like to user</info>
 		<src>The is the database</src>
 		<id>Databse ID Optional for Open source databases</id>
 		<password>Password for secure and private databses</password>
 		<default>Uses the webs default database if none is specified</default>
-
+		<mix>
+		<info>ID to mix base scents to produce new smells</info>
+		<per>percentage of he mix to be used</per> 
+		</mix>
 	</source>
 	<message>
-		<info>Messages to the user on how to provide the smell</info>
+		<info>Messages to the user on type of smell being sent</info>
 		<warning>A warning message if needed for collection of Toxic samples or in general.</warning>
 		<help>A message to the user on how to provide the best sample</help>
 	</message>
-	<sample>
-		<info>What kind of smell sample is going to be collected</info>
+	<device>
+		<id>Device ID</id>
 		<Permission>Human samples may need special permissions, nature and animals are other sources</Permission>
 		<type>Specify the type for browsers and devices may be set in the ID tag</type>
-	</sample>
+	</device>
 	<visual>
-		<info>How is the smell tag visible on the page? Maybe as link to a button, video, image and text</info>
-		<certificate> There could be some kind of compliance certificate a person could click to verify the database and source the smell tag is being sent to</certificate>
+		<info>How is the scent tag visible on the page? Maybe as link to a button, video, image and text</info>
+		<certificate> There could be some kind of compliance certificate a person could click to verify the database and source the scent tag is being sent to</certificate>
 	</visual>
 	<activation>
-		<info>There may be smells that can be only collected at certain times of day to be effective</info>
+		<info>There may be scent that can be activated at certain times</info>
 		<date>date or range when it need to be collected</date>
 		<time>Time of day</time>
 	</activation>
@@ -51,7 +54,7 @@
 </smell>
 
 <example>
-	<smell id="SME911" detect="Auto" type="Human" src="jdbc:[subprotocol]:[node]/[databaseName]" message="This is the user message" strength="8"> </smell>
+	<smell mix=[id{"SNT911""20%""} id=("SNT411" "10%")] detect="Auto" type="Human" src="jdbc:[subprotocol]:[node]/[databaseName]" message="This is the user message" device="scentPRINT" strength="8"> </smell>
 </example>
 </textarea>
 <a href="index.html">Back</a>
