@@ -1,0 +1,126 @@
+<!DOCTYPE html> <!-- Declare document syele to browser -->
+
+<!-- @autor: Frank Ferrao -->
+<!-- @HTML markup version 5. (I have tried to use html 5 tags for most content types) -->
+
+<head>
+<title>Acme eNose Industry</title> <!-- name of the company shown in browser title area -->
+<link rel="stylesheet" type="text/css" href="styles.css" /> <!-- link style to html document -->	
+
+						   
+</head>
+<!--  head is the area to link scripts and put javascript etc -->
+
+<!-- the dody is what is displayed in the browser and is displayed below -->
+
+<!-- I have a single page website with 4 sections -->
+<body id="page">
+  <!-- this is the main Div which contains all the others -->
+<div id="logoArea">
+	<a  id="logo" href="#" target="_self"><img  src="images/logo.png" alt="logo" ></a>
+<nav>
+	<ul>
+  <li><a href="#about">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#caseStudies">Case Studies</a></li>
+  <li><a href="#contactUs">Contact Us</a></li>
+	</ul>	
+</nav>
+		</div>
+	<div id="about">
+		
+
+	<div><img  alt="phone" src="images/mobile.png"/></div>
+	</div>
+<div id="news">
+<h2> Industry News</h2>
+<p>Over the last decades, "electronic sensing" or "e-sensing" technologies have undergone important developments from a technical and commercial point of view. The expression "electronic sensing" refers to the capability of reproducing human senses using sensor arrays and pattern recognition systems. Since 1982,[2] research has been conducted to develop technologies, commonly referred to as electronic noses, that could detect and recognize odors and flavors. The stages of the recognition process are similar to human olfaction and are performed for identification, comparison, quantification and other applications, including data storage and retrieval. However, hedonic evaluation is a specificity of the human nose given that it is related to subjective opinions. These devices have undergone much development and are now used to fulfill industrial needs.</p>
+</div>
+<div id="banner">
+	
+<blockquote><p>Did you ever measure a smell? Can you tell whether one smell is just twice strong as another? Can you measure the difference between two kinds of smell and another? It is very obvious that we have very many different kinds of smells, all the way from the odour of violets and roses up to asafetida. But until you can measure their likeness and differences, you can have no science of odour. If you are ambitious to find a new science, measure a smell.</p>
+<footer><a>— Alexander Graham Bell, 1914</a>
+	</footer></blockquote>
+</div>
+<div id="caseStudies">
+<h2> Case Studies</h2>
+<p>In all industries, odor assessment is usually performed by human sensory analysis, by chemosensors, or by gas chromatography. The latter technique gives information about volatile organic compounds but the correlation between analytical results and actual odor perception is not direct due to potential interactions between several odorous components.
+
+In the Wasp Hound odor detector, the mechanical element is a video camera and the biological element is five parasitic wasps who have been conditioned to swarm in response to the presence of a specific chemical.</p>
+</div>
+<!-- this is Where I put the Accordian code -->
+
+<button class="accordion">Case Study 01</button>
+<div class="panel">
+  <p>A process or record of research in which detailed consideration is given to the development of a particular person, group, or situation over a period of time.</p>
+</div>
+
+<button class="accordion">Case Study 02</button>
+<div class="panel">
+  <p>A process or record of research in which detailed consideration is given to the development of a particular person, group, or situation over a period of time.</p>
+</div>
+
+<button class="accordion">Case Study 03</button>
+<div class="panel">
+  <p>A process or record of research in which detailed consideration is given to the development of a particular person, group, or situation over a period of time.</p>
+
+	<script>
+	
+		/*Javascript for the accordian */
+	
+	var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+	</script>
+	
+	</div>
+	<!-- accordian Ends -->
+	
+	
+<div id="contactUs">
+<!-- The contact foem starts here -->	
+	
+<h2>Contact Us</h2>
+  <form action="action_page.php"> <!-- I dont have this PHP code yet -->
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+
+
+</div>
+
+</body>
+<footer id="footerBtm"> <p>Designed and Coded by Frank Ferrao</p> <p>Coding snipets and accordian script from: https://www.w3schools.com/</p>
+
+</footer>

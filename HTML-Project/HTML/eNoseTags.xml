@@ -1,0 +1,51 @@
+
+<?xml version="1.0" encoding="UTF-8"?> <?xml-stylesheet type="text/css" href="smell.css"?>
+<textarea rows="20" cols="40" style="border:none;">
+
+
+<about>
+	<info>Digital HTML 6 Smell and Scent Tags</info>
+	<version>1.0</version>
+	<encoding>UTF-8</encoding>
+</about>
+<smell>
+	<info>These are the attributes of the smell Tag</info>
+	<id>ID number to tell the browser of the smell/smells to identify from a central database</id>
+	<detect>browser Auto Detects, Permission, parameters: AUTO, ON, OFF, ASK, auto disable</detect>
+	<strength>Sets the strength of the sensor 0to10</strength>
+	<source>
+		<info>The source of the Database you would like to use</info>
+		<src>The is the datbase</src>
+		<id>Databse ID Optional for Open source database</id>
+		<password>Password for secure and private databses</password>
+		<default>Uses the webs default database if none is specified</default>
+
+	</source>
+	<message>
+		<info>Messages to the user on how to provide the smell</info>
+		<warning>A warning message if needed for collection of Toxic samples or in general.</warning>
+		<help>A meesge to the user on how to provide the best sample</help>
+	</message>
+	<sample>
+		<info>What the smell smple is going to be collected</info>
+		<Permission>Human samples may need special permissions, nature and animals are other sources</Permission>
+		<type>Specify the type for browsers and devices may be set in the ID tag</type>
+	</sample>
+	<visual>
+		<info>How is the smell tag visible onthe page? Maybe as link to a button, video, image and text</info>
+		<complicance> There could be some kind of compliance certificate a person could click to verify the datbase and source the smell tag is being sent to</complicance>
+	</visual>
+	<activation>
+		<info>There may be smells that can be only collected at cetain times of day to be effective</info>
+		<date>date or range when it need to be collected</date>
+		<time>Time of day</time>
+	</activation>
+	<script>Allows the attachment of javascipt etc to run custom methods on the Tag</script>
+</smell>
+
+<example>
+	<smell id="SME911" detect="Auto" type="Human" src="jdbc:[subprotocol]:[node]/[databaseName]" message="This is the user message" strength="8"> </smell>
+</example>
+</textarea>
+
+
